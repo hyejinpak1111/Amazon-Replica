@@ -1,22 +1,47 @@
 *{padding: 0; margin:0;}
 li { list-style: none;} /*기호나 번호를 제거 */
 a { text-decoration: none;} /*링크텍스트에 밑줄 없앰 */
-button {cursor: pointer; } /*모든 버튼에 마우스 손모양처리 */
+button {
+    cursor: pointer; 
+    border-radius: 10px;
+} /*모든 버튼에 마우스 손모양처리 */
+
+img {
+    margin: auto;
+    margin-top: 50px;
+}
 
 body {background-color:white;}
 
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
 
 .loginbox{
-    width: 780px; height: 550px;
+    /* width: 780px; height: 550px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    max-width: 500px;
     margin: 0 auto;
-   
+    margin-top: 100px;
+    border: solid grey 1px;
 }
+
 .loginbox h2 {
     width:100%;
     height:100px;
     line-height: 100px;
     text-align: left;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     font-size:20px;
     font-weight: normal;
 }
@@ -33,6 +58,7 @@ body {background-color:white;}
 .loginbox legend {
     position: absolute; left: -999em; /*요소를 화면 밖으로 처리 */
 }
+
 .loginbox label {
     display: block;
     font-size: 12px; color: #333;
@@ -40,7 +66,7 @@ body {background-color:white;}
 }
 .loginbox input {
     display: block;
-    width: 100%; height:50px;
+    width: 450px; height:50px;
     margin-bottom: 25px;
     border:none; background-color: #ededed;
     padding:0 20px;
@@ -73,9 +99,10 @@ body {background-color:white;}
     color: blue; font-size:12px;
     position:relative; top:-2px;
 }
+
 .loginbox button{
     display:block;
-    width: 780px; height: 50px;
+    width: 450px; height: 50px;
     margin: 0 auto;
     border:none; 
     background-color: orange;
